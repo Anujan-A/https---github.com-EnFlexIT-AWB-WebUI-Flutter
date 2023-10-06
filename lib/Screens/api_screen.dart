@@ -14,7 +14,7 @@ class ApiCall extends StatelessWidget {
       String sessionId = jsonResponse[
           'sessionId']; // Angenommen, die Session-ID ist unter dem Schlüssel 'sessionId' verfügbar
 
-      // Speichern Sie die Session ID im Local Storage
+      // Speichert die Session ID im Local Storage
       SharedPreferences prefs = await SharedPreferences.getInstance();
       await prefs.setString('session_id', sessionId);
     } else {
