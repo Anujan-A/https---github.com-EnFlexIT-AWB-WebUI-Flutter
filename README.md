@@ -1,16 +1,31 @@
-# flutter_application_1
+# Bachelorarbeit – Vergleich von Lösungsansätzen zur Entwicklung von plattformübergreifenden Benutzerschnittstellen für verteilte, dezentrale Energiemanagementsysteme
 
-A new Flutter project.
+Flutter Benutzeroberfläche für Agent.Workbench API
 
-## Getting Started
+Im Rahmen meiner **Bachelorarbeit** habe ich eine **Benutzeroberfläche mit Flutter** entwickelt.  
+Die App kommuniziert mit der **Agent.Workbench API** über automatisch generierten **API-Client-Code**,  
+welcher aus der **OpenAPI-Dokumentation** (Swagger) erstellt wurde.  
 
-This project is a starting point for a Flutter application.
+## Hintergrund
+**Agent.Workbench** ist ein Eclipse/OSGi-basiertes Application-Toolkit und Framework,  
+das auf der Agentenplattform **JADE** aufbaut.  
+Es unterstützt die Entwicklung agentenbasierter, endnutzerorientierter RCP-Anwendungen,  
+die es auch **Nicht-Programmierern ermöglichen sollen, Agententechnologien**  
+für ihre eigenen Zwecke einzusetzen.  
 
-A few resources to get you started if this is your first Flutter project:
+## Umsetzung
+- **Framework:** Flutter  
+- **API-Integration:** OpenAPI Generator (Swagger → Dart API-Client)  
+- **Architektur:** Trennung von UI und API-Logik 
+- **Ziel:** Intuitive Benutzeroberfläche für die Interaktion mit Agent.Workbench  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
+- Nutzung von Swagger/OpenAPI zur automatischen Generierung der API-Methoden  
+- Flutter-UI für die Kommunikation mit der Agent.Workbench-Plattform  
+- Abstraktion der API-Aufrufe über generierten Dart-Code  
+- Grundlage für die Weiterentwicklung zu einer produktiven Anwendung  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Fazit
+Dieses Projekt zeigt, wie **moderne Cross-Plattform-Frameworks (Flutter)**  
+mit bestehenden **Java-basierten Agentenframeworks (JADE / OSGi)** kombiniert werden können,  
+um **zugängliche Benutzerschnittstellen** zu schaffen.  
